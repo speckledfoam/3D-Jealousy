@@ -1,9 +1,19 @@
 header h1 {
   font-family: 'Great Vibes', cursive !important;
+  font-size: 4.5rem;      
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;     
+  }
 }
 
 
-body, main, p, .card, .card p, .gallery-grid, footer {
+
+body, main, p, .card, .card p, .gallery-container, .gallery-grid, footer {
   font-family: 'Comic Sans MS', cursive, sans-serif !important;
 }
 
