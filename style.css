@@ -1,3 +1,15 @@
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4.5rem;
+  color: #c71585;
+  text-align: center;
+  margin: 20px 0;
+}
+
+body, p, .card, footer, .gallery-grid {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
