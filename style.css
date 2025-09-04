@@ -11,7 +11,10 @@ header h1 {
   }
 }
 
-
+.site-content, 
+.site-content * {
+  font-family: 'Comic Sans MS', cursive, sans-serif !important;
+}
 
 body, main, p, .card, .card p, .gallery-container, .gallery-grid, footer {
   font-family: 'Comic Sans MS', cursive, sans-serif !important;
