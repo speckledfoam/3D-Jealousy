@@ -1,13 +1,12 @@
-h1 {
-  font-family: 'Great Vibes', cursive;
+header, header h1 {
+  font-family: 'Great Vibes', cursive !important; /* force cursive for header only */
   font-size: 4.5rem;
   color: #c71585;
   text-align: center;
-  margin: 20px 0;
 }
 
-body, p, .card, footer, .gallery-grid {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+body, p, .card, footer, .gallery-grid, main {
+  font-family: 'Comic Sans MS', cursive, sans-serif !important;
 }
 
 body {
