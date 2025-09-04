@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe4ec; 
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 4.5rem;   
+  color: #c71585;
+  font-family: 'Great Vibes', cursive;
+}
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.card {
+  position: relative;              /* needed for pseudo-element */
+  background: white;
+  padding: 20px;
+  border-radius: 25px;             /* card rounding */
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 0;
+}
+
+/* Gradient border with rounded corners */
+.card::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 28px;             /* slightly larger than card for the border */
+  background: linear-gradient(90deg, #c71585, #8b008b); /* gradient */
+  z-index: -1;
+  filter: blur(3px);               /* subtle glow around the gradient */
+}
+
+
+
+
+
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+footer {
+  background: #ffb5c1;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;  /* Comic Sans for footer */
+}
+
+footer h2 {
+  font-size: 1.8rem;  /* bigger text for the heading */
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 1.2rem;  /* bigger text for the paragraph */
+  margin-bottom: 10px;
+}
+
+footer a {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background: linear-gradient(90deg, #c71585, #8b008b); /* left dark pink → right darker pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* gradient fills the text */
+  transition: text-shadow 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+  text-shadow: 0 0 10px rgba(199,21,133,0.7), 0 0 20px rgba(139,0,139,0.5);
+  transform: scale(1.05); /* subtle pop */
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #c71585, #8b008b); /* same dark pink gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* space between card and images */
+  flex-wrap: wrap; /* for small screens */
+}
+
+.placeholder {
+  width: 250px;            /* placeholder width */
+  height: 250px;           /* placeholder height */
+  max-width: 100%;         /* never exceed container */
+  max-height: 100%;        /* never exceed container */
+  background-color: #ffe0e6;
+  border: 2px dashed #c71585;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c71585;
+  font-weight: bold;
+  border-radius: 15px;
+  overflow: hidden;        /* crop anything too big */
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 300px;       
+  object-fit: cover;   
+  border-radius: 15px;
+  border: 3px solid #c71585;
+}
+
+
