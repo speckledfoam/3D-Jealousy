@@ -14,12 +14,6 @@ body, p, .card, .card p, footer, .gallery-grid, main {
   background-color: #ffe4ec;
 }
 
-@media (max-width: 768px) {
-  body, p, .card, .card p, footer, .gallery-grid, main {
-    font-family: 'Comic Sans MS', cursive, sans-serif !important;
-  }
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
