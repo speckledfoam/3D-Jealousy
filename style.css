@@ -1,17 +1,10 @@
 header h1 {
   font-family: 'Great Vibes', cursive !important;
-  font-size: 4.5rem;
-  color: #c71585;
-  text-align: center;
-  margin: 20px 0;
 }
 
-body, p, .card, .card p, footer, .gallery-grid, main {
+
+body, main, p, .card, .card p, .gallery-grid, footer {
   font-family: 'Comic Sans MS', cursive, sans-serif !important;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #ffe4ec;
 }
 
 body {
